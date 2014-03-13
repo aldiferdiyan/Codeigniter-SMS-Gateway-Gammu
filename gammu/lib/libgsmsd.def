@@ -1,0 +1,101 @@
+EXPORTS
+    GSM_StringArray_Add @1
+    GSM_StringArray_Find @2
+    GSM_StringArray_Free @3
+    GSM_StringArray_New @4
+    SMSDFiles @5 DATA
+    SMSDFiles_ReadConfiguration @6
+    SMSDNull @7 DATA
+    SMSDODBC @8 DATA
+    SMSDODBC_AffectedRows @9
+    SMSDODBC_Free @10
+    SMSDODBC_FreeResult @11
+    SMSDODBC_GetBool @12
+    SMSDODBC_GetDate @13
+    SMSDODBC_GetNumber @14
+    SMSDODBC_GetString @15
+    SMSDODBC_NextRow @16
+    SMSDODBC_QuoteString @17
+    SMSDODBC_SeqID @18
+    SMSDSQL @19 DATA
+    SMSDSQL_ParseDate @20
+    SMSDSQL_ReadConfiguration @21
+    SMSDSQL_SQLName @22
+    SMSDSQL_Time2String @23
+    SMSDSQL_option @24
+    SMSD_CheckDBVersion @25
+    SMSD_CheckMultipart @26
+    SMSD_CheckRemoteNumber @27
+    SMSD_CheckSMSCNumber @28
+    SMSD_CheckSMSStatus @29
+    SMSD_CheckSecurity @30
+    SMSD_CloseLog @31
+    SMSD_ConfigureLogging @32
+    SMSD_EmptyFunction @33
+    SMSD_FreeConfig @34
+    SMSD_FreeSharedMemory @35
+    SMSD_GetStatus @36
+    SMSD_Init @37
+    SMSD_InitSharedMemory @38
+    SMSD_InjectSMS @39
+    SMSD_LoadIniNumbersList @40
+    SMSD_LoadNumbersFile @41
+    SMSD_Log @42
+    SMSD_LogErrno @43
+    SMSD_LogError @44
+    SMSD_Log_Function @45
+    SMSD_MainLoop @46
+    SMSD_NewConfig @47
+    SMSD_NoneFunction @48
+    SMSD_NotImplementedFunction @49
+    SMSD_NotSupportedFunction @50
+    SMSD_PhoneStatus @51
+    SMSD_ProcessSMS @52
+    SMSD_ReadConfig @53
+    SMSD_ReadDeleteSMS @54
+    SMSD_RunOn @55
+    SMSD_RunOnCommand @56
+    SMSD_RunOnReceiveEnvironment @57
+    SMSD_SendSMS @58
+    SMSD_SendSMSStatusCallback @59
+    SMSD_Shutdown @60
+    SMSD_Terminate @61
+    SMSD_ValidMessage @62
+    SMSGetService @63
+    currtime_fallback @64 DATA
+    currtime_freetds @65 DATA
+    currtime_mysql @66 DATA
+    currtime_odbc @67 DATA
+    currtime_pgsql @68 DATA
+    currtime_sqlite @69 DATA
+    escape_char_fallback @70 DATA
+    escape_char_freetds @71 DATA
+    escape_char_mysql @72 DATA
+    escape_char_odbc @73 DATA
+    escape_char_pgsql @74 DATA
+    escape_char_sqlite @75 DATA
+    eventlog_close @76
+    eventlog_deregister @77
+    eventlog_init @78
+    eventlog_log @79
+    eventlog_register @80
+    limit_clause_access @81 DATA
+    limit_clause_fallback @82 DATA
+    now_access @83 DATA
+    now_fallback @84 DATA
+    now_freetds @85 DATA
+    now_mysql @86 DATA
+    now_odbc @87 DATA
+    now_pgsql @88 DATA
+    now_plus_access @89 DATA
+    now_plus_fallback @90 DATA
+    now_plus_freetds @91 DATA
+    now_plus_mysql @92 DATA
+    now_plus_odbc @93 DATA
+    now_plus_pgsql @94 DATA
+    now_plus_sqlite @95 DATA
+    now_sqlite @96 DATA
+    smsd_name @97 DATA
+    strptime @98
+    top_clause_access @99 DATA
+    top_clause_fallback @100 DATA

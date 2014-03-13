@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    Options +FollowSymLinks
+    RewriteBase /sms
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php/$1
+
+    #RewriteCond %{HTTPS} off
+    #RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301] 
+
+    #RewriteCond %{HTTPS} off
+    #RewriteCond %{REQUEST_URI} (auth|register|secure)
+    #RewriteRule ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301]
+    #
+    #RewriteCond %{HTTPS} on
+    #RewriteCond %{REQUEST_URI} !(static|auth|register|secure)
+    #RewriteRule ^(.*)$ http://%{SERVER_NAME}%{REQUEST_URI} [R=301]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+    ErrorDocument 404 /index.php
+</IfModule> 

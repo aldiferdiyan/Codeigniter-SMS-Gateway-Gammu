@@ -1,0 +1,67 @@
+Thu 2014/03/13 15:51:21 gammu-smsd[4712]: Unknown DB driver
+Thu 2014/03/13 15:52:12 gammu-smsd[4336]: Using generic SQL for ODBC, this might fail. In such case please set SQL configuration option.
+Thu 2014/03/13 15:52:12 gammu-smsd[4336]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 15:52:12 gammu-smsd[4336]: HY090:1:0:[Microsoft][ODBC Driver Manager] Invalid string or buffer length
+
+Thu 2014/03/13 15:52:12 gammu-smsd[4336]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 15:58:33 gammu-smsd[4512]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 15:58:33 gammu-smsd[4512]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 15:58:33 gammu-smsd[4512]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:04:46 gammu-smsd[5376]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 16:04:46 gammu-smsd[5376]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 16:04:46 gammu-smsd[5376]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:05:05 gammu-smsd[4480]: Using generic SQL for ODBC, this might fail. In such case please set SQL configuration option.
+Thu 2014/03/13 16:05:05 gammu-smsd[4480]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 16:05:05 gammu-smsd[4480]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 16:05:05 gammu-smsd[4480]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:05:06 gammu-smsd[4772]: Using generic SQL for ODBC, this might fail. In such case please set SQL configuration option.
+Thu 2014/03/13 16:05:06 gammu-smsd[4772]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 16:05:06 gammu-smsd[4772]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 16:05:06 gammu-smsd[4772]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:05:13 gammu-smsd[4744]: Using generic SQL for ODBC, this might fail. In such case please set SQL configuration option.
+Thu 2014/03/13 16:05:13 gammu-smsd[4744]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 16:05:13 gammu-smsd[4744]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 16:05:13 gammu-smsd[4744]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:08:57 gammu-smsd[4916]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 16:08:57 gammu-smsd[4916]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 16:08:57 gammu-smsd[4916]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:09:10 gammu-smsd[4372]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 16:09:10 gammu-smsd[4372]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 16:09:10 gammu-smsd[4372]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:09:13 gammu-smsd[2988]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 16:09:13 gammu-smsd[2988]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 16:09:13 gammu-smsd[2988]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:14:37 gammu-smsd[5680]: SQLConnect failed, Code = -1, ODBC diagnostics:
+Thu 2014/03/13 16:14:37 gammu-smsd[5680]: IM002:1:0:[Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified
+
+Thu 2014/03/13 16:14:37 gammu-smsd[5680]: Initialisation failed, stopping Gammu smsd: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:15:53 gammu-smsd[4480]: Connected to Database odbc: gammu on MYSQL
+Thu 2014/03/13 16:15:53 gammu-smsd[4480]: Created Windows RW shared memory at 0000000002CC0000
+Thu 2014/03/13 16:15:53 gammu-smsd[4480]: Starting phone communication...
+Thu 2014/03/13 16:16:02 gammu-smsd[4480]: Inserting phone info
+Thu 2014/03/13 16:16:04 gammu-smsd[4480]: Read 55 messages
+Thu 2014/03/13 16:16:09 gammu-smsd[4480]: Multipart message 0xBA, 2 parts of 2
+Thu 2014/03/13 16:16:09 gammu-smsd[4480]: Multipart message 0x78, 2 parts of 2
+Thu 2014/03/13 16:16:09 gammu-smsd[4480]: Multipart message 0x6E, 2 parts of 2
+Thu 2014/03/13 16:16:19 gammu-smsd[4480]: Error getting send status of message: No response in specified timeout. Probably phone not connected. (TIMEOUT[14])
+Thu 2014/03/13 16:17:34 gammu-smsd[4664]: Connected to Database odbc: gammu on MYSQL
+Thu 2014/03/13 16:17:34 gammu-smsd[4664]: Created Windows RW shared memory at 0000000002DC0000
+Thu 2014/03/13 16:17:34 gammu-smsd[4664]: Starting phone communication...
+Thu 2014/03/13 16:18:16 gammu-smsd[6112]: Connected to Database odbc: gammu on MYSQL
+Thu 2014/03/13 16:18:16 gammu-smsd[6112]: Created Windows RW shared memory at 00000000010A0000
+Thu 2014/03/13 16:18:16 gammu-smsd[6112]: Starting phone communication...
+Thu 2014/03/13 16:18:25 gammu-smsd[6112]: Inserting phone info
+Thu 2014/03/13 16:18:52 gammu-smsd[6112]: Error getting send status of message: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:19:20 gammu-smsd[6112]: Error getting send status of message: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:19:52 gammu-smsd[6112]: Error getting send status of message: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:20:20 gammu-smsd[6112]: Error getting send status of message: Unknown error. (UNKNOWN[27])
+Thu 2014/03/13 16:25:22 gammu-smsd[6112]: Read 1 messages
+Thu 2014/03/13 16:25:24 gammu-smsd[6112]: Read 1 messages

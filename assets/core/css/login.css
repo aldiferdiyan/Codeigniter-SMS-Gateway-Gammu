@@ -1,0 +1,57 @@
+  body {
+  /* background: url("../img/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  background: #fff;
+  }
+  .form-signin {
+    max-width: 300px;
+    padding: 25px 25px 25px 25px;
+    margin: 0px auto;
+    background: #fefefe;
+    border-right: 1px solid #DDD;
+   border-bottom: 1px solid #DDD;
+   border-left: 1px solid #DDD;
+    box-shadow: 0px 0px 10px #EEE;
+    -moz-box-shadow: 0px 0px 10px #EEE;
+  }
+  .form-signin-heading {
+    color: #111;
+    padding-top: 50px;
+    background: #EEE;
+    width: 300px;
+    margin:10% auto 0px;
+    padding: 10px 25px;
+    border: 1px solid #DDD;
+  
+ box-shadow: 0px 0px 10px #EEE;
+    -moz-box-shadow: 0px 0px 10px #EEE;
+  }
+  .login{
+    margin-top: 20px;
+  }
+  .checkbox{
+    margin-left: 25px;
+    margin-top: -20px;
+  }
+  
+  select,
+input[type=text],
+input[type=password],
+input[type=email],
+textarea{
+   border-radius: 0px;
+}
+select:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+textarea:focus{
+   box-shadow: 0px 0px 0px #000;
+   border: 1px solid #0080c0;
+}
+.btn{
+  border-radius:0px;
+}
