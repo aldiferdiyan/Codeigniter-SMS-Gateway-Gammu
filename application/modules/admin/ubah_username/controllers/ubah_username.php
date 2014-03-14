@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Ubah_username extends Core
+class Ubah_username extends Admincore
 {
     function __construct()
     {

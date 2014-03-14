@@ -69,10 +69,13 @@ $url      = 'inbox/search';
 </tr></thead>
 <tbody>
 <?php $i = $this->input->get('offset') + 1;?>
+     <?php if($num_rows == 0){ ?> 
+    <tr><td colspan='4'>No data result ..</td></tr>
+    <?php } ?>
 <?php foreach(core::get_search_pagination('inbox','gammu',$this->input->get('search'),$this->input->get('search_by'),$per_page,$url)->result() as $row): { ?><tr>
 <td><?php echo $i;?></td>
 	<td><?php echo $row->SenderNumber ;?></td>
-		<td><?php echo $row->TextDecoded ;?></td>
+		  <td><?php echo character_limiter($row->TextDecoded,20) ;?></td>
 			<td><?php echo $row->UpdatedInDB ;?></td>
 		
 		

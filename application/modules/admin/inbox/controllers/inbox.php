@@ -1,11 +1,12 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Inbox extends Core
+class Inbox extends Admincore
 {
     function __construct()
     {
         parent::__construct();
         $this->load->model('inbox_model','model');
+        core::update_where('inbox','gammu',array('newComing' => 0),'newComing',1);
     }
     
     /* METHOD "READ"

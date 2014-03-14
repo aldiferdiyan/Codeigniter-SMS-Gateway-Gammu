@@ -11,7 +11,7 @@ class Login extends MX_Controller
       function index()
     {
 	if($this->session->userdata('username') != '')
-	    redirect('phonebook');
+	    redirect('pbk');
         
 	
             $this->load->library('form_validation');
@@ -27,7 +27,7 @@ class Login extends MX_Controller
             else
 		{   
                   if($this->check_login() == TRUE)
-		    redirect('phonebook');
+		    redirect('pbk');
                   else{
 		    $this->session->set_flashdata('login_error','error message');
 		    redirect('login');

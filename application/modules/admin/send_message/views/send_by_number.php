@@ -1,24 +1,23 @@
-  <?php if($this->session->flashdata('success')){?>
-  <div class="notice fg-white marker-on-bottom">
-    <i class='icon-checkmark'></i> Success Sending Message 
-    </div>
+  <legend>Send Message</legend>
+  
+<?php include('layout.php');?>  
+ 
     
-    
-    <?php } ?>
-    
-         <legend>Send Message</legend>
-      <div class="balloon"><div class='padding20'>
-   <form method='POST' action='<?php echo base_url('send_message');?>' charset='UTF-8'>
+       
+ 
+   <form method='POST' action='<?php echo base_url('send_message/send_by_number');?>' charset='UTF-8'>
 
-        <label>No Telephone/HP Tujuan</label>
-	<?php $query = core::get_all('phonebook','gammu');?>
-	<select name='phone'>
-       <?php foreach($query->result() as $row){ ?>
-       <option value='<?php echo $row->phone;?>'><?php echo $row->name;?> (<?php echo $row->phone;?>)</option>
-       <?php } ?>
-       </select>
+        <label>Phone Number</label>
+
+        <input type='text' name='phone'>
        <?php echo form_error('phone');?>
      
+        <label>Total Send</label>
+        <select name='total'>
+            <?php for($i = 1;$i < 11;$i++) { ?>
+            <option value='<?php echo $i;?>'><?php echo $i;?></option>
+            <?php } ?>
+        </select>
          <label>Message</label>
           
           <textarea id='message' class='span9' style='height:200px;' name='message' placeholder='message'><?php echo set_value('message');?></textarea>
@@ -31,14 +30,14 @@
             <input type="submit" class='btn btn-primary' value="Send Message">
          
   </form>
-      </div> 
+ 
       
       
  
     <script src="<?php echo base_url();?>assets/plugin/count-textarea/count-textarea.js"></script>              
  <script>
                           var options = {
-				'maxCharacterSize': 150,
+				'maxCharacterSize': 160,
 				'originalStyle': 'originalDisplayInfo',
 				'warningStyle': 'warningDisplayInfo',
 				'warningNumber': 40,

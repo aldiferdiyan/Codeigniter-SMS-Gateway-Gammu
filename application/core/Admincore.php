@@ -8,11 +8,9 @@ class Admincore extends Core
     {
         parent::__construct();
         //$this->load->model('admincore_model');
-        if(!$this->session->userdata('admin_username') AND
-	   !$this->session->userdata('admin_email')  AND
-	   !$this->session->userdata('admin_password') )
+        if(!$this->session->userdata('username'))
 	{   
-            redirect('home');
+            redirect('login');
         }
     }
 

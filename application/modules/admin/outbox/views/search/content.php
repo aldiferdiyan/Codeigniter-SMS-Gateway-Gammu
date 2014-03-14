@@ -69,18 +69,20 @@ $url      = 'outbox/search';
 </tr></thead>
 <tbody>
 <?php $i = $this->input->get('offset') + 1;?>
+       <?php if($num_rows == 0){ ?> 
+    <tr><td colspan='4'>No data result ..</td></tr>
+    <?php } ?>
 <?php foreach(core::get_search_pagination('outbox','gammu',$this->input->get('search'),$this->input->get('search_by'),$per_page,$url)->result() as $row): { ?><tr>
 <td><?php echo $i;?></td>
 			<td><?php echo $row->DestinationNumber ;?></td>
-			<td><?php echo $row->Text ;?></td>
+                        <td><?php echo character_limiter($row->TextDecoded,20) ;?></td>
 			<td><?php echo $row->SendingDateTime ;?></td>
 			
 			
 			<td>
 		    <center><div class='btn-group' >
-		    <a href='<?php echo base_url();?>outbox/delete/<?php echo $row->ID;?>' class='btn btn-small' data-confirm='Hapus data ini??'><i class='text-error fa fa-trash-o'></i></a>
-                    <a href='<?php echo base_url();?>outbox/detail/<?php echo $row->ID;?>' class='btn btn-small'><i class='text-info fa fa-weibo'></i></a>
-                    </div></center>
+		    <a href='<?php echo base_url();?>outbox/delete/<?php echo $row->ID;?>' class='btn btn-small' data-confirm='Batalkan Pengiriman??'><i class='text-error fa fa-trash-o'></i></a>
+                     </div></center>
                     </td>
 		    
 </tr>

@@ -55,11 +55,14 @@ $url      = 'inbox/index';
 </tr></thead>
 <tbody>
 <?php $i = $this->uri->segment($segment) + 1;?>
+     <?php if($num_rows == 0){ ?> 
+    <tr><td colspan='4'>No data result ..</td></tr>
+    <?php } ?>
 <?php foreach(core::get_all_pagination('inbox','gammu',$per_page,$segment,$url)->result() as $row): { ?><tr>
 <td><?php echo $i;?></td>
 
 			<td><?php echo $row->SenderNumber ;?></td>
-                        <td><?php echo $row->TextDecoded ;?></td>
+                        <td><?php echo character_limiter($row->TextDecoded,20) ;?></td>
                         <td><?php echo $row->UpdatedInDB ;?></td>
 			
 			<td>

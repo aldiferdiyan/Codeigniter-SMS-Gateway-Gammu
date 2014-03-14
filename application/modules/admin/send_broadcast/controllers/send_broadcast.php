@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Send_broadcast extends Sitecore
+class Send_broadcast extends Admincore
 {
     function __construct()
     {
@@ -27,14 +27,17 @@ class Send_broadcast extends Sitecore
          else
         {
 
-	        $t = count($_POST['SendNumber']);
-		foreach($_POST['SendNumber'] as $x)
-		{
-		    core::insert('outbox','gammu',array(
-					'DestinationNumber' => $x,
-						     'TextDecoded' => $this->input->post('message'),
-					));
-		}
+	        $t = count($this->input->post('SendNumber'));
+                for($i = 1;$i <= $this->input->post('total');$i++)
+                {
+                    foreach($this->input->post('SendNumber') as $x)
+                    {
+                        core::insert('outbox','gammu',array(
+                                            'DestinationNumber' => $x,
+                                             'TextDecoded' => $this->input->post('message'),
+                                            ));
+                    }
+                }
 	    
 		$this->session->set_flashdata('success','success');
 		$this->session->set_flashdata('TotalSend',$t);
