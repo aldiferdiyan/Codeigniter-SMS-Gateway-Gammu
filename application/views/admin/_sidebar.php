@@ -1,6 +1,7 @@
 <?php $inbox = core::get_all('inbox','gammu');?>
 <?php $inboxUnread = core::get_where('inbox','gammu',array('newComing' => 1));?>
 <?php $sending = core::get_all('sentitems','gammu');?>
+<?php $sendingError = core::get_where('sentitems','gammu',array('status' => 'SendingError'));?>
 <?php $outbox = core::get_all('outbox','gammu');?>
 <?php $phonebook = core::get_all('pbk','gammu');?>
 <?php $group = core::get_all('pbk_groups','gammu');?>
@@ -23,7 +24,7 @@
     <li class="<?php echo $this->uri->segment(1) == 'inbox' ? "active" : "";?>"><a href="<?php echo base_url('inbox');?>">Inbox  	
          <span class="badge"><?php echo $inbox->num_rows();?></span>
          <?php if($inboxUnread->num_rows() > 0) { ?>
-         <span class="badge badge-important"><?php echo $inboxUnread->num_rows();?> Unread</span>
+         <span class="label label-important"><?php echo $inboxUnread->num_rows();?> Unread</span>
          <?php } ?>
         </a></li>
          <li class="<?php echo $this->uri->segment(1) == 'outbox' ? "active" : "";?>"><a href="<?php echo base_url('outbox');?>">Outbox
@@ -32,8 +33,13 @@
              <?php } ?>
          </a></li>
          </a></li>
-    <li class="<?php echo $this->uri->segment(1) == 'sending' ? "active" : "";?>"><a href="<?php echo base_url('sending');?>">Send Item
-         <span class="badge"><?php echo $sending->num_rows();?></span></a></li>
+    <li class="<?php echo $this->uri->segment(1) == 'sending' ? "active" : "";?>"><a href="<?php echo base_url('sending');?>">
+            Sent items
+         <span class="badge"><?php echo $sending->num_rows();?></span>
+         <?php if($sendingError->num_rows() > 0) { ?>
+             <span class="label label-important"><?php echo $sendingError->num_rows();?> Failed</span>
+             <?php } ?>
+        </a></li>
         </a></li>
     <li class='divider'></li>
     <li class="<?php echo $this->uri->segment(1) == 'admin' ? "active" : "";?>"><a href="<?php echo base_url('admin');?>">Admin</a></li>
